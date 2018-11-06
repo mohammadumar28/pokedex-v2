@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import { observer } from "mobx-react";
-import "antd/dist/antd.css";
-import { Pagination, Input, Radio } from "antd";
-import { Flex, Box } from "@rebass/grid";
-import { RenderPokemons } from "./RenderPokemons";
+import React, { Component } from 'react'
+import { observer } from 'mobx-react'
+import 'antd/dist/antd.css'
+import { Pagination, Input, Radio } from 'antd'
+import { Flex, Box } from '@rebass/grid'
+import { RenderPokemons } from './RenderPokemons'
 
-const RadioGroup = Radio.Group;
-const RadioButton = Radio.Button;
+const RadioGroup = Radio.Group
+const RadioButton = Radio.Button
 
 
 
@@ -39,19 +39,19 @@ export  const App = observer(class App extends Component {
           <p>Loading</p>
         ) : (
           <React.Fragment>
-            <Flex flexWrap="wrap">
+            <Flex flexWrap='wrap'>
               <Box
                 width={1}
                 p={1}
-                style={{ textAlign: "center", fontSize: 50 }}
+                style={{ textAlign: 'center', fontSize: 50 }}
               >
                 <h1>Pokedex</h1>
               </Box>
               <Box width={1} p={4}>
                 <h2>Search Pokemons</h2>
                 <Input
-                  type="text"
-                  placeholder="Search..."
+                  type='text'
+                  placeholder='Search...'
                   value={searchText}
                   onPressEnter={this.handleSearch}
                   onChange={this.handleSearch}
@@ -61,7 +61,7 @@ export  const App = observer(class App extends Component {
 
             {searchText.length === 0 ? (
               <React.Fragment>
-                <Flex flexWrap="wrap">
+                <Flex flexWrap='wrap'>
                   <Box width={1} p={4}>
                     <h2>Select total items to show per page</h2>
                     <RadioGroup
@@ -77,7 +77,7 @@ export  const App = observer(class App extends Component {
                   <Box width={1} p={4}>
                     <h2>Select Page</h2>
                     <Pagination
-                      size="small"
+                      size='small'
                       current={currentPage}
                       onChange={this.handleClick}
                       total={filteredPokemons.length}
@@ -86,12 +86,12 @@ export  const App = observer(class App extends Component {
                   </Box>
                 </Flex>
 
-                <Flex flexWrap="wrap">
+                <Flex flexWrap='wrap'>
                   <RenderPokemons currentPokemons={fetchPokemons} />
                 </Flex>
               </React.Fragment>
             ) : (
-              <Flex flexWrap="wrap">
+              <Flex flexWrap='wrap'>
                 <RenderPokemons currentPokemons={filteredPokemons} />
               </Flex>
             )}
