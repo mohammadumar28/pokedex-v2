@@ -1,3 +1,7 @@
+This app is hosted at https://pokedex-v2.herokuapp.com/
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { observer } from "mobx-react";
-import "antd/dist/antd.css";
-import { Card, Tag, Divider } from "antd";
-import { Box } from "@rebass/grid";
+import React, { Component } from 'react'
+import { observer } from 'mobx-react'
+import 'antd/dist/antd.css'
+import { Card, Tag, Divider } from 'antd'
+import { Box } from '@rebass/grid'
 
-const { Meta } = Card;
+const { Meta } = Card
 
 
 export const RenderPokemons = observer(class RenderPokemons extends Component {
