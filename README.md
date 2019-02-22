@@ -4,6 +4,12 @@ This project is hosted on **Heroku**
 
 ## To run this app
 
-1. open cmd/terminal and `cd` in to the directory.
+1. open `cmd/terminal` and `cd` in to the directory.
 2. Run `yarn install` or `npm install`.
 3. Then run `yarn start` or `npm start`.
+
+## Features
+
+* Search functionality.
+* Pagination.
+* Options for displaying number of items in a page.
