@@ -10,6 +10,10 @@
 2. Run `yarn install` or `npm install`.
 3. Then run `yarn start` or `npm start`.
 
+## Live Demo
+
+[Live link](https://pokedex-app-react.herokuapp.com/)
+
 ## Features
 
 * Search functionality.
