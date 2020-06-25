@@ -1,6 +1,8 @@
-## All data was retrived from [Pokedex API](https://pokeapi.co/)
+# Pokedex 
 
-This project is hosted on **Heroku**
+> A Pokedex App, data retrieved from [Pokedex API](https://pokeapi.co/)
+
+![screenshot](screenshot.png)
 
 ## To run this app
 
