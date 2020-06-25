@@ -18,7 +18,7 @@
 
 * Search functionality.
 * Pagination.
-* Options for displaying number of items in a page.
+* Options for displaying the number of items in a page.
 
 ## Author
 
